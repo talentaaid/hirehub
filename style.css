@@ -1,1 +1,52 @@
-*{box-sizing:border-box}body{margin:0;font-family:Arial,sans-serif;color:#172b4d;line-height:1.6}.container{width:90%;max-width:1100px;margin:auto}header{background:#0d2747;color:white;padding:18px 0}.nav{display:flex;justify-content:space-between;align-items:center}.nav h2{margin:0}.nav span{color:#e8a52b}nav a{color:white;text-decoration:none;margin-left:20px}.hero{background:linear-gradient(120deg,#eef5fb,#dcecff);padding:90px 0;text-align:center}.hero h1{font-size:48px;margin-bottom:20px}.hero p{max-width:700px;margin:0 auto 35px}.btn{display:inline-block;padding:12px 28px;border-radius:6px;text-decoration:none;margin:5px;font-weight:bold}.primary{background:#e8a52b;color:white}.secondary{border:2px solid #0d2747;color:#0d2747}.section{padding:70px 0}.light{background:#f5f7fa}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.card{background:white;padding:25px;border-radius:12px;box-shadow:0 5px 20px #0001}.countries{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.countries div{background:#0d2747;color:white;padding:30px;border-radius:12px;text-align:center;font-size:22px}.countries small{font-size:15px}.cta{background:#0d2747;color:white;text-align:center}footer{background:#081a31;color:white;text-align:center;padding:25px}@media(max-width:700px){.nav,.cards,.countries{display:block}.hero h1{font-size:32px}nav{margin-top:15px}}
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,sans-serif;color:#142b4f;line-height:1.7}
+.container{width:90%;max-width:1150px;margin:auto}
+
+header{background:#092544;color:#fff;padding:18px 0}
+.nav{display:flex;justify-content:space-between;align-items:center}
+.brand{font-weight:bold;font-size:18px}
+.brand span{color:#e8aa2b}
+nav a{color:white;text-decoration:none;margin-left:25px;font-size:14px}
+
+.hero{
+min-height:520px;
+background:linear-gradient(90deg,rgba(7,35,67,.9),rgba(7,35,67,.25)),url('cover.jpg');
+background-size:cover;
+background-position:center;
+display:flex;
+align-items:center;
+color:white;
+}
+
+.hero-content{max-width:650px}
+.hero h1{font-size:52px;line-height:1.15}
+.hero p{font-size:18px}
+
+.btn{padding:13px 30px;border-radius:6px;text-decoration:none;display:inline-block;margin:10px 5px;font-weight:bold}
+.gold{background:#e8aa2b;color:white}
+.outline{border:2px solid white;color:white}
+
+.section{padding:70px 0}
+.light{background:#f5f7fb}
+
+h2{text-align:center;font-size:32px;margin-bottom:35px}
+
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:25px}
+.card{background:white;padding:30px;border-radius:12px;box-shadow:0 10px 25px #0001}
+
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;text-align:center}
+.steps div{padding:25px;background:#092544;color:white;border-radius:12px}
+.steps b{font-size:30px;color:#e8aa2b}
+
+.countries{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.countries div{background:#092544;color:white;padding:35px;text-align:center;border-radius:12px;font-size:22px}
+
+.cta{background:#092544;color:white;text-align:center}
+
+footer{background:#06182d;color:white;text-align:center;padding:30px}
+
+@media(max-width:700px){
+.nav,.cards,.steps,.countries{display:block}
+.hero h1{font-size:35px}
+nav{margin-top:15px}
+}
