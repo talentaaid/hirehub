@@ -79,20 +79,33 @@
   <div><span>✓</span><p><b>Clear candidate screening</b><br>Profiles are reviewed before being recommended.</p></div>
   <div><span>✓</span><p><b>Direct consultation</b><br>Discuss position details with our recruitment team.</p></div>
 </div></div>
-<form class="hiring-form" action="#" method="post"><div class="field-grid">
-<label><span>Company Name</span><input type="text" name="company" placeholder="Your company name" required></label>
-<label><span>Industry</span><input type="text" name="industry" placeholder="Company industry" required></label>
-<label><span>Position Required</span><input type="text" name="position" placeholder="Position title" required></label>
-<label><span>Number of Employees</span><input type="number" name="quantity" min="1" placeholder="Required quantity" required></label>
-<label><span>Employment Type</span><select name="employment_type" required><option value="">Select employment type</option><option>Permanent</option><option>Contract</option><option>Outsourcing</option><option>Project Based</option></select></label>
-<label><span>Work Location</span><input type="text" name="location" placeholder="City or work location" required></label>
-<label><span>Contact Person</span><input type="text" name="contact_person" placeholder="Full name" required></label>
-<label><span>WhatsApp / Email</span><input type="text" name="contact" placeholder="Active contact details" required></label>
-</div><label class="full-field"><span>Additional Requirements</span><textarea name="requirements" rows="5" placeholder="Describe qualifications, experience, or other requirements"></textarea></label><button type="submit" class="btn btn-primary submit-btn">Submit Hiring Requirement</button><small class="privacy-note">Your information will only be used to respond to this hiring request.</small></form>
+<form id="hiringForm" class="hiring-form" novalidate>
+  <div class="form-intro">
+    <div><span class="form-kicker">Company Hiring Request</span><h3>Submit your requirement</h3></div>
+    <span class="secure-badge">Secure submission</span>
+  </div>
+  <div class="field-grid">
+    <label><span>Company Name <b>*</b></span><input type="text" name="company" autocomplete="organization" placeholder="Your company name" required></label>
+    <label><span>Industry <b>*</b></span><input type="text" name="industry" placeholder="Company industry" required></label>
+    <label><span>Position Required <b>*</b></span><input type="text" name="position" placeholder="Position title" required></label>
+    <label><span>Number of Employees <b>*</b></span><input type="number" name="quantity" min="1" max="10000" inputmode="numeric" placeholder="Required quantity" required></label>
+    <label><span>Employment Type <b>*</b></span><select name="employment_type" required><option value="">Select employment type</option><option>Permanent</option><option>Contract</option><option>Outsourcing</option><option>Project Based</option><option>Internship</option></select></label>
+    <label><span>Work Location <b>*</b></span><input type="text" name="location" autocomplete="address-level2" placeholder="City or work location" required></label>
+    <label><span>Contact Person <b>*</b></span><input type="text" name="contact_person" autocomplete="name" placeholder="Full name" required></label>
+    <label><span>Company Email</span><input type="email" name="email" autocomplete="email" placeholder="name@company.com"></label>
+    <label><span>WhatsApp Number</span><input type="tel" name="whatsapp" autocomplete="tel" inputmode="tel" placeholder="+62 812 3456 7890"></label>
+    <label><span>Preferred Contact</span><select name="preferred_contact"><option value="">Select preference</option><option>Email</option><option>WhatsApp</option><option>Phone Call</option></select></label>
+  </div>
+  <label class="full-field"><span>Additional Requirements</span><textarea name="requirements" rows="5" maxlength="3000" placeholder="Describe qualifications, experience, hiring timeline, or other requirements"></textarea><small class="character-count"><span id="requirementCount">0</span>/3000</small></label>
+  <label class="consent-field"><input type="checkbox" name="consent" required><span>I confirm that the information provided is accurate and agree to be contacted by Talentaa regarding this hiring request.</span></label>
+  <div id="formMessage" class="form-message" role="status" aria-live="polite"></div>
+  <button type="submit" class="btn btn-primary submit-btn"><span class="button-text">Submit Hiring Requirement</span><span class="button-loader" aria-hidden="true"></span></button>
+  <small class="privacy-note">Your information is used only to process this request. At least an email or WhatsApp number is required.</small>
+</form>
 </div></section>
 <section class="final-cta"><div class="container cta-inner"><div><span class="eyebrow">RECRUITMENT SUPPORT</span><h2>Ready To Build Your Team?</h2><p>Partner with Talentaa to access qualified candidates and structured recruitment support.</p></div><a href="#hiring-form" class="btn btn-light">Start Hiring</a></div></section>
 </main>
 <footer class="site-footer"><div class="container footer-inner"><div><img src="logo.jpg" alt="Talentaa"><p>Connecting Talent, Empowering Business.</p></div><div class="footer-links"><a href="index.html">Home</a><a href="services.html">Services</a><a href="candidates.html">Candidates</a><a href="contact.html">Contact</a></div><p class="copyright">© 2026 Talentaa. All rights reserved.</p></div></footer>
-<script>const toggle=document.querySelector('.menu-toggle');const nav=document.querySelector('.main-nav');toggle.addEventListener('click',()=>{const open=nav.classList.toggle('open');toggle.setAttribute('aria-expanded',open?'true':'false');});</script>
+<script src="employers.js" defer></script>
 </body>
 </html>
