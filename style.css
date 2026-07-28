@@ -14,7 +14,18 @@ nav a{text-decoration:none;color:#092544;font-weight:600}
 .btn:hover{transform:translateY(-4px);box-shadow:0 15px 35px #0002}
 .secondary{background:white;border:1px solid #092544}
 
-.hero{background:linear-gradient(120deg,#f4f7fb,#fff);padding:100px 0}
+.hero{
+background:
+linear-gradient(
+90deg,
+rgba(255,255,255,.92),
+rgba(255,255,255,.45)
+),
+url("hero.jpg");
+background-size:cover;
+background-position:center;
+padding:100px 0;
+}
 .hero-layout{display:grid;grid-template-columns:1fr 430px;gap:90px;align-items:center}
 
 .hero-copy span{color:#e8aa2b;font-size:12px;font-weight:bold;letter-spacing:2px}
