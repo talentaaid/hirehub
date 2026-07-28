@@ -1,33 +1,60 @@
 *{box-sizing:border-box}
 body{margin:0;font-family:Arial,sans-serif;color:#17263a}
 .container{width:92%;max-width:1400px;margin:auto}
-header{height:90px;background:#fff;border-bottom:1px solid #eee}
+
+header{height:90px;background:white;border-bottom:1px solid #eee}
 .nav{height:90px;display:flex;align-items:center;justify-content:space-between}
-.brand{font-size:28px;font-weight:800;color:#092544}
+.logo-text{font-size:32px;font-weight:800;color:#092544}
+.tagline{font-size:10px;color:#e8aa2b;letter-spacing:1px}
 nav{display:flex;gap:30px}
 nav a{text-decoration:none;color:#092544;font-weight:600}
-.btn{background:#e8aa2b;color:#092544;padding:15px 28px;border-radius:10px;text-decoration:none;font-weight:bold;display:inline-block;transition:.3s}
-.btn:hover{transform:translateY(-3px);box-shadow:0 10px 25px #ddd}
-.small{padding:12px 20px}
-.outline{background:#fff;border:1px solid #092544}
-.hero{min-height:650px;background:linear-gradient(120deg,#092544,#f5f8fc);display:flex;align-items:center;color:white}
-.hero-grid{display:grid;grid-template-columns:1fr 420px;gap:80px;align-items:center}
-.hero-text span{color:#e8aa2b;font-weight:bold;letter-spacing:2px}
-h1{font-size:70px;line-height:1.05;color:white}
-p{font-size:18px;line-height:1.6}
-.actions{display:flex;gap:15px;margin-top:30px}
-.search-box{background:white;color:#092544;padding:35px;border-radius:25px;box-shadow:0 20px 50px #0003}
-.search-box input{width:100%;padding:15px;margin:8px 0;border:1px solid #ddd}
-.search-box button{width:100%;padding:15px;background:#092544;color:white;border:0;border-radius:8px}
-.quick{background:#092544;padding:50px 0}
-.quick-grid,.grid,.process{display:grid;gap:25px}
-.quick-grid{grid-template-columns:repeat(3,1fr)}
-.quick-grid div,.grid div{background:white;padding:35px;border-radius:20px}
+
+.btn{background:#e8aa2b;color:#092544;padding:15px 30px;border-radius:8px;text-decoration:none;font-weight:bold;display:inline-block;transition:.3s}
+.btn:hover{transform:translateY(-3px)}
+.small{padding:12px 22px}
+
+.hero{
+height:720px;
+background:linear-gradient(90deg,#092544,#36506b);
+display:flex;
+align-items:center;
+color:white;
+position:relative;
+overflow:hidden;
+}
+
+.overlay{position:absolute;inset:0;background:linear-gradient(90deg,rgba(9,37,68,.95),rgba(9,37,68,.45))}
+
+.hero-grid{position:relative;display:grid;grid-template-columns:1fr 420px;gap:90px;align-items:center}
+
+.hero-copy span{color:#e8aa2b;font-weight:bold;letter-spacing:2px}
+h1{font-size:72px;line-height:1.05;margin:25px 0}
+.hero-copy p{font-size:20px;max-width:650px}
+
+.buttons{display:flex;gap:15px;margin-top:35px}
+.light{background:white}
+
+.search-card{background:white;color:#092544;padding:35px;border-radius:25px;box-shadow:0 25px 70px #0005}
+.search-card input{width:100%;padding:15px;margin:8px 0;border:1px solid #ddd}
+.search-card button{width:100%;padding:15px;background:#092544;color:white;border:0;border-radius:8px}
+
+.services{padding:60px 0}
+.three,.four,.process{display:grid;gap:25px}
+.three{grid-template-columns:repeat(3,1fr)}
+.four{grid-template-columns:repeat(4,1fr)}
+.service,.four div{background:white;padding:35px;border-radius:20px;box-shadow:0 15px 40px #0001}
+
 .section{padding:90px 0}
-.grid{grid-template-columns:repeat(4,1fr)}
-.process{grid-template-columns:repeat(5,1fr);margin-top:30px}
-.process div{padding:30px;background:#092544;color:white;border-radius:15px;text-align:center}
-.soft{background:#f5f7fb}
+.dark-section{background:#092544;color:white}
+.dark-section h2{color:white}
+.process{grid-template-columns:repeat(5,1fr)}
+.process div{padding:25px;background:#fff;color:#092544;border-radius:15px;text-align:center}
+
 .cta{text-align:center;padding:100px;background:#f5f7fb}
 footer{background:#061b32;color:white;padding:40px;text-align:center}
-@media(max-width:900px){nav{display:none}.hero-grid,.quick-grid,.grid,.process{grid-template-columns:1fr}h1{font-size:42px}}
+
+@media(max-width:900px){
+nav{display:none}
+.hero-grid,.three,.four,.process{grid-template-columns:1fr}
+h1{font-size:42px}
+}
