@@ -191,27 +191,94 @@ EMPLOYERS V2 UPGRADE
 }
 
 .hero-image-box{
-    min-height:350px;
-    background:
-    linear-gradient(
-    135deg,
-    #092544,
-    #29496b
-    );
-    border-radius:25px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    box-shadow:0 25px 60px rgba(0,0,0,.15);
+
+height:420px;
+background:
+linear-gradient(135deg,#092544,#173d63);
+
+border-radius:28px;
+padding:35px;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+box-shadow:
+0 25px 60px rgba(9,37,68,.25);
+
 }
 
 
 .mini-card{
-    background:white;
-    width:280px;
-    padding:30px;
-    border-radius:18px;
-    box-shadow:0 15px 35px rgba(0,0,0,.15);
+
+background:white;
+
+width:320px;
+
+padding:30px;
+
+border-radius:20px;
+
+box-shadow:
+0 20px 50px rgba(0,0,0,.15);
+
+}
+
+
+.mini-card h3{
+
+color:#092544;
+font-size:22px;
+margin-bottom:20px;
+
+}
+
+
+.mini-card p{
+
+color:#60738a;
+margin-bottom:20px;
+
+}
+
+
+
+/* dashboard item */
+
+.mini-card::after{
+
+content:
+"98% Match     ✓ Verified Candidate     ✓ Ready Interview";
+
+display:block;
+
+background:#f4f7fb;
+
+padding:15px;
+
+border-radius:12px;
+
+font-size:13px;
+
+color:#092544;
+
+line-height:1.8;
+
+}
+
+
+
+/* hover effect */
+
+.hero-image-box:hover{
+
+transform:translateY(-5px);
+
+transition:.3s;
+
+box-shadow:
+0 35px 70px rgba(9,37,68,.35);
+
 }
 
 
