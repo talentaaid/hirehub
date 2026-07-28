@@ -2,10 +2,16 @@
 
 const TALENTAA_API_URL = "https://script.google.com/macros/s/AKfycbwCEVP-4TzSNdbWOf0LamJZtRVt6yB08sX_x6tKKG1JPkuThHsQLsbK3daT8xFrnwFJ/exec";
 
-document.addEventListener("DOMContentLoaded", () => {
+function initializeTalentaaPage() {
   setupMobileNavigation();
   setupHiringForm();
-});
+}
+
+if (document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded", initializeTalentaaPage, { once: true });
+} else {
+  initializeTalentaaPage();
+}
 
 function setupMobileNavigation() {
   const toggle = document.querySelector(".menu-toggle");
