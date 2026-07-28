@@ -62,3 +62,119 @@ nav{display:none}
 .hero-layout,.cards,.trust-grid,.steps{grid-template-columns:1fr}
 h1{font-size:42px}
 }
+
+/* =========================
+EMPLOYERS PAGE
+========================= */
+
+.inner-hero{
+    background:
+    linear-gradient(
+    120deg,
+    #f4f7fb,
+    #ffffff
+    );
+    padding:90px 0;
+}
+
+.inner-hero span{
+    color:#e8aa2b;
+    font-size:12px;
+    letter-spacing:2px;
+    font-weight:700;
+}
+
+.inner-hero h1{
+    font-size:52px;
+    line-height:1.1;
+    color:#092544;
+    margin:20px 0;
+}
+
+.inner-hero p{
+    max-width:650px;
+    color:#526b89;
+    font-size:18px;
+}
+
+
+.two-column{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:60px;
+    align-items:start;
+}
+
+
+.feature-card{
+    background:white;
+    padding:25px;
+    margin-bottom:20px;
+    border-radius:18px;
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+
+.feature-card:hover{
+    transform:translateY(-5px);
+}
+
+
+.form-card{
+
+    background:white;
+    padding:40px;
+    border-radius:22px;
+    box-shadow:0 20px 50px rgba(0,0,0,.12);
+
+}
+
+
+.form-card input,
+.form-card select{
+
+    width:100%;
+    padding:15px;
+    margin-bottom:15px;
+    border:1px solid #ddd;
+    border-radius:8px;
+    font-size:14px;
+
+}
+
+
+.form-card .btn{
+
+    width:100%;
+    margin-top:10px;
+
+}
+
+
+.cta{
+
+    background:#092544;
+    color:white;
+    text-align:center;
+    padding:70px 20px;
+
+}
+
+
+.cta h2{
+    font-size:36px;
+}
+
+
+@media(max-width:768px){
+
+.two-column{
+    grid-template-columns:1fr;
+}
+
+.inner-hero h1{
+    font-size:38px;
+}
+
+}
