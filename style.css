@@ -18,8 +18,8 @@ nav a{text-decoration:none;color:#092544;font-weight:600}
 background:
 linear-gradient(
 90deg,
-rgba(255,255,255,.65),
-rgba(255,255,255,.25)
+rgba(255,255,255,.45),
+rgba(255,255,255,.15)
 ),
 url("hero.jpg");
 background-size:cover;
