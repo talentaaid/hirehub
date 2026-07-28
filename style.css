@@ -1,62 +1,40 @@
 *{box-sizing:border-box}
+html{scroll-behavior:smooth}
 body{margin:0;font-family:Arial,sans-serif;color:#17263a;line-height:1.6}
 .container{width:90%;max-width:1150px;margin:auto}
-
-header{height:85px;background:white;border-bottom:1px solid #eee}
-.nav{height:85px;display:flex;align-items:center;justify-content:space-between}
+header{height:85px;background:#fff;border-bottom:1px solid #eee;position:sticky;top:0;z-index:5}
+.nav{height:100%;display:flex;align-items:center;justify-content:space-between}
 .logo{width:170px}
 nav{display:flex;gap:25px}
-nav a{text-decoration:none;color:#092544;font-size:14px;font-weight:600}
-
-.btn{background:#e8aa2b;color:#092544;padding:14px 26px;border-radius:10px;text-decoration:none;font-weight:bold;display:inline-block}
+nav a{text-decoration:none;color:#092544;font-weight:600;font-size:14px}
+.btn{display:inline-block;background:#e8aa2b;color:#092544;padding:14px 25px;border-radius:10px;text-decoration:none;font-weight:bold;transition:.3s}
+.btn:hover{transform:translateY(-3px);box-shadow:0 10px 25px #ddd}
 .small{padding:10px 18px}
-.outline{background:white;border:1px solid #092544}
-
+.outline{background:#fff;border:1px solid #092544}
 .hero{padding:90px 0;background:linear-gradient(120deg,#fff,#f5f8fc)}
 .hero-grid{display:grid;grid-template-columns:1fr 450px;gap:70px;align-items:center}
-
-.label{font-size:12px;letter-spacing:2px;color:#e8aa2b;font-weight:bold}
+.label{font-size:12px;color:#e8aa2b;font-weight:bold;letter-spacing:2px}
 h1{font-size:62px;line-height:1.05;color:#092544}
 h2{color:#092544}
-
+p{color:#66788f}
 .actions{display:flex;gap:15px;margin-top:30px}
-
-.dashboard,.card,.resources div,.features div{
-background:white;
-padding:30px;
-border-radius:22px;
-box-shadow:0 20px 50px rgba(0,0,0,.1)
-}
-
-.candidate{display:flex;gap:15px;background:#f5f7fb;padding:20px;border-radius:15px;margin:25px 0}
-.avatar{background:#092544;color:white;padding:15px;border-radius:10px}
-
-.steps{display:grid;grid-template-columns:1fr 1fr;gap:15px}
-.steps div{padding:18px;border:1px solid #ddd;border-radius:12px}
-.steps span{display:block;color:#e8aa2b}
-
-.dark{background:#092544;color:white;padding:18px;border-radius:12px;margin-top:20px}
-
+.dashboard,.card,.grid div{background:white;padding:30px;border-radius:22px;box-shadow:0 20px 50px rgba(0,0,0,.1)}
+.dashboard{animation:float 5s infinite}
+@keyframes float{50%{transform:translateY(-10px)}}
+.candidate{background:#f5f7fb;padding:20px;border-radius:15px;margin:20px 0}
+.steps,.cards,.grid,.process{display:grid;gap:20px}
+.steps{grid-template-columns:1fr 1fr}
+.steps div,.process div{padding:20px;border:1px solid #ddd;border-radius:15px}
+.dark{background:#092544;color:#fff;padding:18px;border-radius:12px}
 .section{padding:80px 0}
-.cards,.resources,.features,.process-grid{display:grid;gap:25px}
-
 .cards{grid-template-columns:1fr 1fr}
-.resources{grid-template-columns:repeat(4,1fr);margin-top:30px}
-.features{grid-template-columns:repeat(4,1fr);margin-top:30px}
-
+.grid{grid-template-columns:repeat(4,1fr);margin-top:30px}
+.process{grid-template-columns:repeat(5,1fr);margin-top:30px}
+.process div{background:#092544;color:#fff}
 .soft{background:#f5f7fb}
-
-.process{background:#092544;color:white;padding:80px 0}
-.process h2{color:white}
-.process-grid{grid-template-columns:repeat(5,1fr)}
-.process-grid div{background:rgba(255,255,255,.1);padding:25px;border-radius:15px;text-align:center}
-
-.cta{text-align:center;padding:80px}
-
-footer{background:#061b32;color:white;text-align:center;padding:40px}
-
-@media(max-width:900px){
-nav{display:none}
-.hero-grid,.cards,.resources,.features,.process-grid{grid-template-columns:1fr}
-h1{font-size:42px}
-}
+.cta{text-align:center;padding:80px;background:#f5f7fb}
+.legal{padding:40px;background:#fff}
+footer{padding:40px;background:#061b32;color:white;text-align:center}
+.animate{animation:fade .8s ease}
+@keyframes fade{from{opacity:0;transform:translateY(20px)}to{opacity:1}}
+@media(max-width:900px){nav{display:none}.hero-grid,.cards,.grid,.process{grid-template-columns:1fr}h1{font-size:42px}}
