@@ -2,39 +2,38 @@
 body{margin:0;font-family:Arial,sans-serif;color:#17263a}
 .container{width:92%;max-width:1300px;margin:auto}
 
-header{background:#fff;height:90px;border-bottom:1px solid #eee}
+header{height:90px;background:white;border-bottom:1px solid #eee}
 .nav{height:90px;display:flex;align-items:center;justify-content:space-between}
-.logo{font-size:34px;font-weight:800;color:#092544}
-.sub{font-size:11px;color:#e8aa2b;letter-spacing:1px}
-nav{display:flex;gap:28px}
-nav a{color:#092544;font-weight:600;font-size:14px}
 
-.btn{background:#e8aa2b;padding:15px 30px;border-radius:10px;color:#092544;text-decoration:none;font-weight:bold;display:inline-block;transition:.3s}
+.logo{width:190px;height:auto;display:block}
+
+nav{display:flex;gap:28px}
+nav a{text-decoration:none;color:#092544;font-weight:600}
+
+.btn{background:#e8aa2b;color:#092544;padding:15px 30px;border-radius:10px;text-decoration:none;font-weight:bold;transition:.3s}
 .btn:hover{transform:translateY(-4px);box-shadow:0 15px 35px #0002}
 .secondary{background:white;border:1px solid #092544}
 
-.hero{background:linear-gradient(120deg,#f4f7fb,#ffffff);padding:100px 0}
+.hero{background:linear-gradient(120deg,#f4f7fb,#fff);padding:100px 0}
 .hero-layout{display:grid;grid-template-columns:1fr 430px;gap:90px;align-items:center}
-.eyebrow{color:#e8aa2b;font-size:12px;font-weight:bold;letter-spacing:2px}
-h1{font-size:72px;line-height:1.05;color:#092544;margin:25px 0}
-p{font-size:18px;color:#64748b;line-height:1.7}
+
+.hero-copy span{color:#e8aa2b;font-size:12px;font-weight:bold;letter-spacing:2px}
+h1{font-size:72px;line-height:1.05;color:#092544}
+.hero-copy p{font-size:20px;color:#64748b}
 .buttons{display:flex;gap:15px;margin-top:35px}
 
 .talent-search{background:white;padding:40px;border-radius:25px;box-shadow:0 25px 60px #09254420}
-.talent-search h2{margin-top:0}
-.talent-search label{display:block;font-size:13px;font-weight:bold;margin-top:15px}
-input{width:100%;padding:16px;border:1px solid #ddd;border-radius:8px;margin-top:6px}
-.talent-search button{width:100%;margin-top:20px;padding:16px;background:#092544;color:white;border:0;border-radius:8px;font-weight:bold}
+.talent-search input{width:100%;padding:16px;margin:8px 0;border:1px solid #ddd;border-radius:8px}
+.talent-search label{font-weight:bold;font-size:13px}
+.talent-search button{width:100%;padding:16px;background:#092544;color:white;border:0;border-radius:8px;margin-top:15px}
 
 section{padding:90px 0}
 h2{font-size:40px;color:#092544}
 
 .cards,.trust-grid,.steps{display:grid;gap:25px}
-.cards{grid-template-columns:repeat(3,1fr);margin-top:40px}
+.cards{grid-template-columns:repeat(3,1fr)}
 .card,.trust-grid div{background:white;padding:40px;border-radius:22px;box-shadow:0 15px 40px #09254415;transition:.3s}
 .card:hover,.trust-grid div:hover{transform:translateY(-8px)}
-.icon{color:#e8aa2b;font-weight:bold}
-.card a{color:#092544;font-weight:bold}
 
 .trust{background:#f5f7fb}
 .trust-grid{grid-template-columns:repeat(4,1fr)}
@@ -42,10 +41,10 @@ h2{font-size:40px;color:#092544}
 .process{background:#092544}
 .process h2{color:white}
 .steps{grid-template-columns:repeat(5,1fr)}
-.steps div{background:white;padding:30px;border-radius:18px;text-align:center;color:#092544}
+.steps div{background:white;padding:30px;border-radius:18px;text-align:center}
 
 .cta{text-align:center;background:#f5f7fb}
-footer{background:#061b32;color:white;text-align:center;padding:40px}
+footer{background:#061b32;color:white;padding:40px;text-align:center}
 
 @media(max-width:900px){
 nav{display:none}
