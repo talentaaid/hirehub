@@ -1,514 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Talentaa | Employers</title>
-
-<link rel="stylesheet" href="style.css">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Talentaa helps companies find qualified candidates through structured recruitment, screening, and talent matching.">
+  <title>Talentaa | Employers</title>
+  <link rel="stylesheet" href="employers.css">
 </head>
-
 <body>
-
-<header>
-
-<div class="container nav">
-
-<a href="index.html">
-<img src="logo.jpg" class="logo" alt="Talentaa">
-</a>
-
-<nav>
-
-<a href="index.html">Home</a>
-<a href="services.html">Services</a>
-<a href="employers.html">Employers</a>
-<a href="candidates.html">Candidates</a>
-<a href="contact.html">Contact</a>
-
-</nav>
-
-<a href="#requirement" class="btn">
-Get Started
-</a>
-
-</div>
-
+<header class="site-header">
+  <div class="container nav">
+    <a href="index.html" class="brand"><img src="logo.jpg" alt="Talentaa"></a>
+    <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false"><span></span><span></span><span></span></button>
+    <nav class="main-nav">
+      <a href="index.html">Home</a><a href="services.html">Services</a><a href="employers.html" class="active">Employers</a><a href="candidates.html">Candidates</a><a href="contact.html">Contact</a>
+    </nav>
+    <a href="#hiring-form" class="btn btn-primary nav-cta">Get Started</a>
+  </div>
 </header>
-
-
-<!-- HERO -->
-
-<section class="inner-hero">
-
-<div class="container hero-flex">
-
-<div>
-
-<span>FOR EMPLOYERS</span>
-
-<h1>
-Find The Right Talent
-For Your Business
-</h1>
-
-<p>
-Talentaa helps companies discover qualified professionals through structured recruitment, professional screening, candidate matching, and workforce solutions.
-</p>
-
-<div class="buttons">
-
-<a href="#requirement" class="btn">
-Submit Hiring Request
-</a>
-
-<a href="contact.html" class="btn secondary">
-Talk To Consultant
-</a>
-
-</div>
-
-</div>
-
-
-<div class="hero-image-box">
-
-<div class="mini-card">
-
-<h3>
-Talentaa Recruitment Platform
-</h3>
-
-<p>
-Qualified candidates ready for your review.
-</p>
-
-<hr>
-
-<div style="display:flex;justify-content:space-between;margin:20px 0">
-
-<div>
-
-<h2 style="margin:0;color:#092544;">98%</h2>
-
-<small>Match Score</small>
-
-</div>
-
-<div>
-
-<h2 style="margin:0;color:#092544;">24H</h2>
-
-<small>Response</small>
-
-</div>
-
-</div>
-
-<div style="font-size:14px;line-height:2">
-
-✓ Skills Verified
-
-<br>
-
-✓ Interview Ready
-
-<br>
-
-✓ Reference Checked
-
-<br>
-
-✓ Available Immediately
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
+<main>
+<section class="hero">
+  <div class="hero-pattern"></div>
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <span class="eyebrow">FOR EMPLOYERS</span>
+      <h1>Find The Right Talent<br>For Your Business</h1>
+      <p>Talentaa helps companies identify, screen, and connect with qualified professionals through a structured recruitment process.</p>
+      <div class="hero-actions"><a href="#hiring-form" class="btn btn-primary">Submit Hiring Request</a><a href="contact.html" class="btn btn-outline">Talk To Consultant</a></div>
+      <div class="hero-trust">
+        <div class="trust-item"><strong>Structured</strong><span>Screening Process</span></div>
+        <div class="trust-item"><strong>Responsive</strong><span>Recruitment Support</span></div>
+        <div class="trust-item"><strong>Flexible</strong><span>Hiring Solutions</span></div>
+      </div>
+    </div>
+    <div class="dashboard-wrap">
+      <div class="dashboard">
+        <div class="dashboard-head"><div><span class="dashboard-label">Talentaa Recruitment Platform</span><h3>Hiring Overview</h3></div><span class="status-dot">Live</span></div>
+        <div class="metric-grid"><div class="metric"><span>Total Candidates</span><strong>842</strong><small>Qualified profiles</small></div><div class="metric"><span>Match Score</span><strong>98%</strong><small>Role compatibility</small></div></div>
+        <div class="pipeline">
+          <div class="section-title"><h4>Candidate Pipeline</h4><span>This month</span></div>
+          <div class="pipeline-row"><span>Screened</span><div class="bar"><i style="width:92%"></i></div><b>124</b></div>
+          <div class="pipeline-row"><span>Interview</span><div class="bar"><i style="width:66%"></i></div><b>38</b></div>
+          <div class="pipeline-row"><span>Offer</span><div class="bar"><i style="width:42%"></i></div><b>14</b></div>
+          <div class="pipeline-row"><span>Hired</span><div class="bar"><i style="width:28%"></i></div><b>9</b></div>
+        </div>
+        <div class="recent">
+          <div class="section-title"><h4>Recent Candidates</h4><span>Verified</span></div>
+          <div class="candidate"><span class="avatar">ME</span><div><b>Mechanical Engineer</b><small>5 years experience</small></div><span class="match">96%</span></div>
+          <div class="candidate"><span class="avatar">HR</span><div><b>HR Officer</b><small>3 years experience</small></div><span class="match">94%</span></div>
+          <div class="candidate"><span class="avatar">PS</span><div><b>Production Supervisor</b><small>7 years experience</small></div><span class="match">92%</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
-
-
-
-<!-- TRUST -->
-
-<section>
-
-<div class="container">
-
-<div class="cards">
-
-<div class="card">
-
-<h2>500+</h2>
-
-<h3>Candidate Database</h3>
-
-<p>
-Qualified professionals from multiple industries.
-</p>
-
-</div>
-
-
-<div class="card">
-
-<h2>10+</h2>
-
-<h3>Industries</h3>
-
-<p>
-Manufacturing, Construction, IT, Engineering and more.
-</p>
-
-</div>
-
-
-<div class="card">
-
-<h2>95%</h2>
-
-<h3>Placement Success</h3>
-
-<p>
-High success rate through structured recruitment.
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-
-
-<!-- WHY -->
-
-<section>
-
-<div class="container">
-
-<h2>
-Why Companies Choose Talentaa
-</h2>
-
-<div class="cards">
-
-<div class="card">
-
-<h3>
-01
-</h3>
-
-<h4>
-Professional Screening
-</h4>
-
-<p>
-Every candidate is screened before being presented to clients.
-</p>
-
-</div>
-
-
-<div class="card">
-
-<h3>
-02
-</h3>
-
-<h4>
-Talent Matching
-</h4>
-
-<p>
-We recommend candidates that fit your technical and cultural requirements.
-</p>
-
-</div>
-
-
-<div class="card">
-
-<h3>
-03
-</h3>
-
-<h4>
-Recruitment Support
-</h4>
-
-<p>
-Supporting companies from hiring request until successful placement.
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-
-
-<!-- PROCESS -->
-
-<section class="process-section">
-
-<div class="container">
-
-<h2>
-Our Recruitment Process
-</h2>
-
-<div class="process">
-
-<div>
-
-<b>01</b>
-
-Requirement
-
-</div>
-
-<div>
-
-<b>02</b>
-
-Candidate Search
-
-</div>
-
-<div>
-
-<b>03</b>
-
-Screening
-
-</div>
-
-<div>
-
-<b>04</b>
-
-Interview
-
-</div>
-
-<div>
-
-<b>05</b>
-
-Placement
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-
-
-<!-- INDUSTRIES -->
-
-<section>
-
-<div class="container">
-
-<h2>
-Industries We Serve
-</h2>
-
-<div class="cards">
-
-<div class="card">
-
-<h3>
-Manufacturing
-</h3>
-
-<p>
-Production, Operators, Supervisors, Managers.
-</p>
-
-</div>
-
-
-<div class="card">
-
-<h3>
-Engineering
-</h3>
-
-<p>
-Mechanical, Electrical, Civil & Project Engineers.
-</p>
-
-</div>
-
-
-<div class="card">
-
-<h3>
-Information Technology
-</h3>
-
-<p>
-Programmers, IT Support, Network, System Analyst.
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-
-
-<!-- FORM -->
-
-<section id="requirement">
-
-<div class="container form-layout">
-
-<div>
-
-<h2>
-Submit Your Hiring Requirement
-</h2>
-
-<p>
-
-Tell us your hiring needs and our consultant will contact you shortly.
-
-</p>
-
-<ul>
-
-<li>Professional recruitment</li>
-
-<li>Executive search</li>
-
-<li>Mass hiring</li>
-
-<li>Outsourcing manpower</li>
-
-</ul>
-
-</div>
-
-
-<div class="form-card">
-
-<input type="text" placeholder="Company Name">
-
-<input type="text" placeholder="Industry">
-
-<input type="text" placeholder="Position Required">
-
-<input type="number" placeholder="Number of Employees">
-
-<select>
-
-<option>
-Employment Type
-</option>
-
-<option>
-Permanent
-</option>
-
-<option>
-Contract
-</option>
-
-<option>
-Outsourcing
-</option>
-
-</select>
-
-<input type="text" placeholder="Location">
-
-<input type="text" placeholder="Required Experience">
-
-<input type="text" placeholder="Contact Person">
-
-<input type="email" placeholder="Email">
-
-<input type="text" placeholder="WhatsApp Number">
-
-<button class="btn" style="width:100%;">
-Submit Requirement
-</button>
-
-</div>
-
-</div>
-
-</section>
-
-
-
-<!-- CTA -->
-
-<section class="cta">
-
-<div class="container">
-
-<h2>
-Ready To Build Your Team?
-</h2>
-
-<p>
-
-Partner with Talentaa and access qualified candidates faster.
-
-</p>
-
-<br>
-
-<a href="contact.html" class="btn">
-
-Contact Talentaa
-
-</a>
-
-</div>
-
-</section>
-
-
-
-<footer>
-
-<div class="container">
-
-<p>
-
-© 2026 Talentaa Recruitment.
-Connecting Talent, Empowering Business.
-
-</p>
-
-</div>
-
-</footer>
-
+<section class="stats-section"><div class="container stats-grid">
+  <article class="stat-card"><div class="stat-icon">01</div><div><strong>500+</strong><h3>Candidate Database</h3><p>Professional profiles across multiple industries.</p></div></article>
+  <article class="stat-card"><div class="stat-icon">02</div><div><strong>10+</strong><h3>Industries Served</h3><p>Talent support for operational and professional roles.</p></div></article>
+  <article class="stat-card"><div class="stat-icon">03</div><div><strong>95%</strong><h3>Placement Success</h3><p>Structured matching for more effective recruitment.</p></div></article>
+</div></section>
+<section class="section why-section"><div class="container"><div class="section-heading"><span class="eyebrow">WHY TALENTAA</span><h2>A Smarter Way To Build Your Team</h2><p>Practical recruitment support designed around your hiring requirements.</p></div><div class="feature-grid">
+  <article class="feature-card"><span class="feature-number">01</span><h3>Professional Screening</h3><p>Candidate profiles are reviewed based on experience, skills, and the requirements of each position.</p></article>
+  <article class="feature-card"><span class="feature-number">02</span><h3>Relevant Talent Matching</h3><p>We shortlist candidates who are more closely aligned with your technical and operational needs.</p></article>
+  <article class="feature-card"><span class="feature-number">03</span><h3>Dedicated Recruitment Support</h3><p>Your hiring process is supported from requirement clarification through candidate placement.</p></article>
+</div></div></section>
+<section class="industry-section"><div class="container"><div class="section-heading light-heading"><span class="eyebrow">INDUSTRY COVERAGE</span><h2>Supporting Companies Across Key Industries</h2></div><div class="industry-grid">
+  <div class="industry-item"><span>01</span><h3>Manufacturing</h3></div><div class="industry-item"><span>02</span><h3>Engineering</h3></div><div class="industry-item"><span>03</span><h3>Construction</h3></div><div class="industry-item"><span>04</span><h3>Logistics</h3></div><div class="industry-item"><span>05</span><h3>Technology</h3></div><div class="industry-item"><span>06</span><h3>Hospitality</h3></div>
+</div></div></section>
+<section class="section process-section"><div class="container"><div class="section-heading"><span class="eyebrow">HOW IT WORKS</span><h2>Our Recruitment Process</h2><p>A clear process that keeps your hiring needs focused and efficient.</p></div><div class="process-line">
+  <article class="process-step"><span>01</span><h3>Requirement</h3><p>We identify the role, qualifications, quantity, and hiring timeline.</p></article>
+  <article class="process-step"><span>02</span><h3>Talent Search</h3><p>Relevant profiles are sourced from our network and candidate database.</p></article>
+  <article class="process-step"><span>03</span><h3>Screening</h3><p>Candidate qualifications and experience are reviewed before submission.</p></article>
+  <article class="process-step"><span>04</span><h3>Interview</h3><p>Shortlisted candidates proceed to the company's interview process.</p></article>
+  <article class="process-step"><span>05</span><h3>Placement</h3><p>The selected candidate completes the agreed onboarding process.</p></article>
+</div></div></section>
+<section class="form-section" id="hiring-form"><div class="container form-grid"><div class="form-copy"><span class="eyebrow">START HIRING</span><h2>Tell Us About Your Hiring Requirements</h2><p>Share the basic information about the position you need. Our team will contact you to discuss the next recruitment steps.</p><div class="form-benefits">
+  <div><span>✓</span><p><b>Flexible recruitment support</b><br>For individual or volume hiring requirements.</p></div>
+  <div><span>✓</span><p><b>Clear candidate screening</b><br>Profiles are reviewed before being recommended.</p></div>
+  <div><span>✓</span><p><b>Direct consultation</b><br>Discuss position details with our recruitment team.</p></div>
+</div></div>
+<form class="hiring-form" action="#" method="post"><div class="field-grid">
+<label><span>Company Name</span><input type="text" name="company" placeholder="Your company name" required></label>
+<label><span>Industry</span><input type="text" name="industry" placeholder="Company industry" required></label>
+<label><span>Position Required</span><input type="text" name="position" placeholder="Position title" required></label>
+<label><span>Number of Employees</span><input type="number" name="quantity" min="1" placeholder="Required quantity" required></label>
+<label><span>Employment Type</span><select name="employment_type" required><option value="">Select employment type</option><option>Permanent</option><option>Contract</option><option>Outsourcing</option><option>Project Based</option></select></label>
+<label><span>Work Location</span><input type="text" name="location" placeholder="City or work location" required></label>
+<label><span>Contact Person</span><input type="text" name="contact_person" placeholder="Full name" required></label>
+<label><span>WhatsApp / Email</span><input type="text" name="contact" placeholder="Active contact details" required></label>
+</div><label class="full-field"><span>Additional Requirements</span><textarea name="requirements" rows="5" placeholder="Describe qualifications, experience, or other requirements"></textarea></label><button type="submit" class="btn btn-primary submit-btn">Submit Hiring Requirement</button><small class="privacy-note">Your information will only be used to respond to this hiring request.</small></form>
+</div></section>
+<section class="final-cta"><div class="container cta-inner"><div><span class="eyebrow">RECRUITMENT SUPPORT</span><h2>Ready To Build Your Team?</h2><p>Partner with Talentaa to access qualified candidates and structured recruitment support.</p></div><a href="#hiring-form" class="btn btn-light">Start Hiring</a></div></section>
+</main>
+<footer class="site-footer"><div class="container footer-inner"><div><img src="logo.jpg" alt="Talentaa"><p>Connecting Talent, Empowering Business.</p></div><div class="footer-links"><a href="index.html">Home</a><a href="services.html">Services</a><a href="candidates.html">Candidates</a><a href="contact.html">Contact</a></div><p class="copyright">© 2026 Talentaa. All rights reserved.</p></div></footer>
+<script>const toggle=document.querySelector('.menu-toggle');const nav=document.querySelector('.main-nav');toggle.addEventListener('click',()=>{const open=nav.classList.toggle('open');toggle.setAttribute('aria-expanded',open?'true':'false');});</script>
 </body>
-
 </html>
