@@ -1,0 +1,120 @@
+/* ABOUT PAGE ONLY */
+
+.about-hero{
+background:linear-gradient(120deg,#f4f7fb,#ffffff);
+padding:90px 0;
+}
+
+.about-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:70px;
+align-items:center;
+}
+
+.label{
+color:#e8aa2b;
+font-size:12px;
+font-weight:bold;
+letter-spacing:2px;
+}
+
+.about-hero h1{
+font-size:52px;
+color:#092544;
+}
+
+.about-hero p{
+font-size:18px;
+color:#526b89;
+line-height:1.7;
+}
+
+.about-photo{
+height:380px;
+border-radius:28px;
+overflow:hidden;
+box-shadow:0 25px 60px #09254430;
+}
+
+.about-photo img{
+width:100%;
+height:100%;
+object-fit:cover;
+}
+
+.text{
+max-width:850px;
+font-size:18px;
+color:#526b89;
+line-height:1.7;
+}
+
+.about-services{
+background:#f5f7fb;
+}
+
+.about-cards{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:25px;
+}
+
+.about-cards div{
+background:white;
+padding:35px;
+border-radius:20px;
+box-shadow:0 15px 40px #00000012;
+}
+
+.about-process{
+background:#092544;
+}
+
+.about-process h2{
+color:white;
+}
+
+.steps{
+display:grid;
+grid-template-columns:repeat(5,1fr);
+gap:20px;
+}
+
+.steps div{
+background:white;
+padding:25px;
+border-radius:15px;
+text-align:center;
+color:#092544;
+}
+
+.industry{
+font-size:18px;
+color:#526b89;
+}
+
+.about-contact{
+background:#092544;
+color:white;
+text-align:center;
+padding:70px 20px;
+}
+
+.about-contact h2{
+color:white;
+}
+
+@media(max-width:900px){
+
+.about-grid,
+.about-cards,
+.steps{
+grid-template-columns:1fr;
+}
+
+.about-hero h1{
+font-size:38px;
+}
+
+}
